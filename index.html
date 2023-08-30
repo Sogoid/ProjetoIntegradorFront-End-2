@@ -7,14 +7,14 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="./assets/css/styleIndex.css" rel="stylesheet">
 
     <title>Document</title>
 </head>
 
-<body class="sm:container"">
-    <div>
-        <header class=" d-flex justify-content-center bg-warning text-danger sm:bg-primary">
-    <h1>Logo</h1>
+<body class="sm:container gap-1">
+    <header class=" d-flex justify-content-center bg-warning text-danger sm:bg-primary">
+        <h1>Logo</h1>
     </header>
     <div class="d-flex justify-content-around gap-2">
         <aside id="menu__lateral" class="menu__lateral">
@@ -25,7 +25,7 @@
 
         </main>
     </div>
-    <section class="d-flex justify-content-around ">
+    <section class="d-flex justify-content-around bg-color">
         <a href="#" class="d-flex flex-column text-center"><i class="bi bi-house-check-fill"></i>Home</a>
         <a href="#" class="d-flex flex-column text-center"><i class="bi bi-plus-circle-fill"></i>Cadastro</a>
         <a href="#" class="d-flex flex-column text-center"><i class="bi bi-list-stars"></i>Listagem</a>
@@ -33,10 +33,11 @@
         <a href="#" class="d-flex flex-column text-center"><i class="bi bi-power"></i>Sair</a>
 
     </section>
-    <footer>
-        <h1>footer</h1>
+    <footer class="d-flex justify-content-between bg-color">
+        <p class="m-0">Usuário: <span>fulano</span></p>
+        <p class="m-0">Data: <span>30/08/2023</span></p>
     </footer>
-    </div>
+
     <script src="./assets/js/components.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>

@@ -1,1 +1,5 @@
 @import "style.css";
+
+.bg-color {
+    background-color: var(--backgroud-color);
+}
