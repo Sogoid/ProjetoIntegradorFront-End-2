@@ -3,3 +3,26 @@
 .bg-color {
     background-color: var(--backgroud-color);
 }
+
+/* Sobrescrever as regras CSS do Bootstrap para links */
+.menu__footer-item,
+.menu__lateral {
+    color: inherit; /* Remover a cor do link */
+    text-decoration: none; /* Remover o sublinhado */
+}
+.menu__lateral ul {
+    list-style: none;
+}
+#menu__lateral {
+    display: none !important;
+}
+@media screen and (min-width: 700px) {
+    #menu__lateral {
+        display: flex !important;
+        text-align: center;
+    }
+    #menu__footer,
+    #title__logo {
+        display: none !important;
+    }
+}

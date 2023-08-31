@@ -12,30 +12,32 @@
     <title>Document</title>
 </head>
 
-<body class="sm:container gap-1">
-    <header class=" d-flex justify-content-center bg-warning text-danger sm:bg-primary">
-        <h1>Logo</h1>
-    </header>
-    <div class="d-flex justify-content-around gap-2">
-        <aside id="menu__lateral" class="menu__lateral">
-
+<body class="container-fluid">
+    <div class="row">
+        <header id="title__logo" class="col-12 bg-color">
+            <img src="./assets/img/log-OneGed.svg " alt="Logo OneGed">
+        </header>
+        <aside id="menu__lateral" class="col-3 col-md-2 col-lg-1 menu__lateral bg-color">
         </aside>
-        <main class="w-100 h-100">
+        <main class="col-9 col-md-10 col-lg-10">
             <div class="bg-success">...</div>
-
         </main>
     </div>
-    <section class="d-flex justify-content-around bg-color">
-        <a href="#" class="d-flex flex-column text-center"><i class="bi bi-house-check-fill"></i>Home</a>
-        <a href="#" class="d-flex flex-column text-center"><i class="bi bi-plus-circle-fill"></i>Cadastro</a>
-        <a href="#" class="d-flex flex-column text-center"><i class="bi bi-list-stars"></i>Listagem</a>
-        <a href="#" class="d-flex flex-column text-center"><i class="bi bi-person-circle"></i>Usuários</a>
-        <a href="#" class="d-flex flex-column text-center"><i class="bi bi-power"></i>Sair</a>
+    <div id="menu__footer" class="d-flex justify-content-around bg-color">
+        <a href="#" class="menu__footer-item d-flex flex-column text-center text-black"><i
+                class="bi bi-house-check-fill text-black fs-2"></i>Home</a>
+        <a href="#" class="menu__footer-item d-flex flex-column text-center text-black"><i
+                class="bi bi-plus-circle-fill text-black fs-2"></i>Cadastro</a>
+        <a href="#" class="menu__footer-item d-flex flex-column text-center text-black"><i
+                class="bi bi-list-stars text-black fs-2"></i>Listagem</a>
+        <a href="#" class="menu__footer-item d-flex flex-column text-center text-black"><i
+                class="bi bi-person-circle text-black fs-2"></i>Usuários</a>
+        <a href="#" class="menu__footer-item d-flex flex-column text-center text-black"><i
+                class="bi bi-power text-black fs-2"></i>Sair</a>
 
-    </section>
-    <footer class="d-flex justify-content-between bg-color">
-        <p class="m-0">Usuário: <span>fulano</span></p>
-        <p class="m-0">Data: <span>30/08/2023</span></p>
+    </div>
+    <footer id="footer" class="d-flex justify-content-between bg-color">
+
     </footer>
 
     <script src="./assets/js/components.js"></script>
