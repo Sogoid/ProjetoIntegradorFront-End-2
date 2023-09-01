@@ -22,8 +22,3 @@
     /* Backgrounds*/
     --background-primario: url("../img/bg.jpg");
 }
-
-html,
-body {
-    height: 100%;
-}

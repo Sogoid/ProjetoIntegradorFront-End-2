@@ -15,7 +15,13 @@
 }
 #menu__lateral {
     display: none !important;
-    width: 290px;
+    width: 10rem;
+}
+.container__main {
+    background-image: url("../img/log-OneGed.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 250px;
 }
 /* .linha {
     border-bottom: 1px solid black;
@@ -30,5 +36,11 @@
     #menu__footer,
     #title__logo {
         display: none !important;
+    }
+
+    .container__main {
+        background-image: url("../assets/img/fundo-black.png");
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 }
