@@ -23,9 +23,7 @@
     --background-primario: url("../img/bg.jpg");
 }
 
+html,
 body {
-    width: 100vw;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    height: 100%;
 }

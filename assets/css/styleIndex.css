@@ -15,8 +15,14 @@
 }
 #menu__lateral {
     display: none !important;
+    width: 290px;
 }
-@media screen and (min-width: 700px) {
+/* .linha {
+    border-bottom: 1px solid black;
+    width: 100%;
+} */
+
+@media screen and (min-width: 769px) {
     #menu__lateral {
         display: flex !important;
         text-align: center;

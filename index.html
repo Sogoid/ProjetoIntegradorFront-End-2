@@ -13,32 +13,24 @@
 </head>
 
 <body class="container-fluid">
-    <div class="row">
-        <header id="title__logo" class="col-12 bg-color">
+    <div class="d-flex flex-column flex-md-row">
+        <header id="title__logo" class="text-center bg-color ">
             <img src="./assets/img/log-OneGed.svg " alt="Logo OneGed">
         </header>
-        <aside id="menu__lateral" class="col-3 col-md-2 col-lg-1 menu__lateral bg-color">
+        <aside id="menu__lateral" class="flex-column bg-color">
         </aside>
-        <main class="col-9 col-md-10 col-lg-10">
-            <div class="bg-success">...</div>
+        <main class="">
+            <div class="bg-success">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque accusantium ut
+                accusamus sunt consectetur qui ratione voluptatem repellendus mollitia velit, repellat minima commodi
+                saepe iste inventore quis neque nobis libero.</div>
         </main>
     </div>
-    <div id="menu__footer" class="d-flex justify-content-around bg-color">
-        <a href="#" class="menu__footer-item d-flex flex-column text-center text-black"><i
-                class="bi bi-house-check-fill text-black fs-2"></i>Home</a>
-        <a href="#" class="menu__footer-item d-flex flex-column text-center text-black"><i
-                class="bi bi-plus-circle-fill text-black fs-2"></i>Cadastro</a>
-        <a href="#" class="menu__footer-item d-flex flex-column text-center text-black"><i
-                class="bi bi-list-stars text-black fs-2"></i>Listagem</a>
-        <a href="#" class="menu__footer-item d-flex flex-column text-center text-black"><i
-                class="bi bi-person-circle text-black fs-2"></i>Usuários</a>
-        <a href="#" class="menu__footer-item d-flex flex-column text-center text-black"><i
-                class="bi bi-power text-black fs-2"></i>Sair</a>
-
+    <div class="position-relative">
+        <div id="menu__footer" class=" d-flex justify-content-around p-2 fixed-bottom mb-5 bg-color"></div>
+        <!-- <div class="linha fixed-bottom mb-5"></div> -->
+        <footer id="footer" class="d-flex justify-content-between p-3 fixed-bottom fixed-bottom bg-color"></footer>
     </div>
-    <footer id="footer" class="d-flex justify-content-between bg-color">
 
-    </footer>
 
     <script src="./assets/js/components.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
