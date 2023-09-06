@@ -1,6 +1,9 @@
-$("#menu__lateral").load("./assets/components/asideComp.html");
 $("#menu__footer").load("./assets/components/asideFooterComp.html");
 $("#footer").load("./assets/components/footerComp.html");
+
+$("#menu__lateral-logo").load("./assets/components/aisdeCompLogo.html");
+$("#menu__lateral-nav").load("./assets/components/asideComp.html");
+$("#menu__lateral-dropdown").load("./assets/components/asideCompDropdwon.html");
 
 // Código para fazer manipulação na Dom.
 // $(function () {
