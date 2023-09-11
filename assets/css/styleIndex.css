@@ -5,23 +5,24 @@
 }
 
 /* Sobrescrever as regras CSS do Bootstrap para links */
-.menu__footer-item,
+/* .menu__footer-item,
 .menu__lateral {
-    color: inherit; /* Remover a cor do link */
-    text-decoration: none; /* Remover o sublinhado */
-}
-.menu__lateral ul {
+    color: inherit;
+    text-decoration: none; 
+} */
+/* .menu__lateral ul {
     list-style: none;
 }
 #menu__lateral {
     display: none !important;
     width: 10rem;
-}
+} */
 .container__main {
-    background-image: url("../img/log-OneGed.svg");
-    background-size: cover;
+    background-image: url("../img/fundo-black.png");
+    background-size: 50%;
+    background-position: center;
     background-repeat: no-repeat;
-    width: 250px;
+    opacity: 30%;
 }
 /* .linha {
     border-bottom: 1px solid black;
@@ -36,11 +37,5 @@
     #menu__footer,
     #title__logo {
         display: none !important;
-    }
-
-    .container__main {
-        background-image: url("../assets/img/fundo-black.png");
-        background-size: cover;
-        background-repeat: no-repeat;
     }
 }
