@@ -94,10 +94,7 @@
     color: var(--primaria-color);
     background-color: green;
 }
-.nav-item:hover {
-    background-color: aqua !important;
-    padding: 1em;
-}
+
 /* Mostra o menu dropdown ao passar o mouse */
 .dropdown__list:hover .dropdown__content {
     display: block;
