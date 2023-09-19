@@ -81,27 +81,35 @@
     #title__logo {
         display: none !important;
     }
+
     .sidebar {
         width: 100px;
         transition: width 0.5s;
         position: absolute;
         z-index: 1;
     }
+
     .menu__itens {
         width: 50px !important;
         padding: 1.9em;
     }
+
     .margin__itens {
         margin-top: 17em;
     }
 
     .sidebar:hover {
-        width: 180px;
-        margin-left: 1em;
+        width: 190px;
 
         .menu-text {
             display: inline;
         }
+
+        .margin__sidebar {
+            padding-left: 3.1em;
+
+        }
+
     }
 
     .menu-item {
