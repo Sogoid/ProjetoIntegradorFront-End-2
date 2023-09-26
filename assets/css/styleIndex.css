@@ -11,11 +11,22 @@
 }
 
 .container__main {
-    background-image: url("../img/log-OneGed.svg");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../img/log-OneGed.svg");
     background-size: 30%;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 20%;
+
+    position: relative;
+}
+
+.content {
+    /* Centraliza o conteúdo na página */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* Estilize seu conteúdo como desejar */
 }
 
 /* Estilo do botão dropdown */
@@ -83,7 +94,7 @@
     }
 
     .sidebar {
-        width: 100px;
+        width: 8em;
         transition: width 0.5s;
         position: absolute;
         z-index: 1;
@@ -99,17 +110,11 @@
     }
 
     .sidebar:hover {
-        width: 190px;
+        width: 11em;
 
         .menu-text {
             display: inline;
         }
-
-        .margin__sidebar {
-            padding-left: 3.1em;
-
-        }
-
     }
 
     .menu-item {
