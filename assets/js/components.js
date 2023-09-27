@@ -12,6 +12,3 @@ $("#menu__lateral-nav").load("./assets/components/asideComp.html");
 
 // Carrega o componente referente ao menu DropDown.
 $("#menu__lateral-dropdown").load("./assets/components/asideCompDropdwon.html");
-
-
-

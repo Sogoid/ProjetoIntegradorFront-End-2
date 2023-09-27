@@ -1,0 +1,44 @@
+<form id="frmCadastro" class="mt-5">
+    <div class="form-floating mb-3 custom__input">
+        <input class="form-control rounded-pill shadow border-black" id="inputRegisterCPF" name="" placeholder="CPF"
+            type="text" required>
+        <label for="inputRegisterCPF">CPF</label>
+    </div>
+    <div class="form-floating mb-3 custom__input">
+        <input class="form-control rounded-pill shadow border-black" id="inputRegisterDataNasc" name=""
+            placeholder="Data de nascimento" type="date" required>
+        <label for="inputRegisterDataNasc">Data de nascimento</label>
+    </div>
+    <div class="form-floating mb-3 custom__input">
+        <input class="form-control rounded-pill shadow border-black" id="inputRegisterName" name=""
+            placeholder="Nome Completo" type="text" required>
+        <label for="inputRegisterName">Nome Completo</label>
+    </div>
+    <div class="form-floating mb-3 custom__input">
+        <input class="form-control rounded-pill shadow border-black" id="inputRegisterEnd" name=""
+            placeholder="E-mail válido" type="email" required>
+        <label for="inputRegisterEnd">E-email válido</label>
+    </div>
+    <div class="form-floating mb-3 custom__input">
+        <input class="form-control rounded-pill shadow border-black" id="inputRegisterEmail" name=""
+            placeholder="Endereço" type="text" required>
+        <label for="inputRegisterEmail">Endereço</label>
+    </div>
+    <section class="d-flex gap-2">
+        <div class="form-floating mb-3">
+            <input class="form-control rounded-pill shadow border-black custom__input-senha"
+                id="inputRegisterPasswordLogin" name="" placeholder="Senha" type="password" required>
+            <label for="inputRegisterPasswordLogin">Senha</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input class="form-control rounded-pill shadow border-black custom__input-senha"
+                id="inputRegisterRepeatPasswordLogin" name="" placeholder="Repita a Senha" type="password" required>
+            <label for="inputRegisterRepeatPasswordLogin">Repita a Senha</label>
+        </div>
+    </section>
+    <div class="d-flex gap-3">
+        <button type="submit" class="w-50 btn btn-lg btn-dark rounded-pill mb-3 shadow"
+            onclick="validaCampos()">Salvar</button>
+        <button type="reset" class="w-50 btn btn-lg btn-danger rounded-pill mb-3 shadow">Cancelar</button>
+    </div>
+</form>

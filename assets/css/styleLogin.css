@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg-primary {
+    background-color: #00d6a0 !important;
+}
+
+.img__logo {
+    width: 8em;
+    height: 8em;
+}
+
+.img__foto-login {
+    width: 7rem;
+    height: 7rem;
+}
