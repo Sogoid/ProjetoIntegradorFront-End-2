@@ -19,11 +19,11 @@
   <!-- TODO: Implementar a funcionalidade de mensagem para o usuário avisando que fez login com sucesso. -->
 
   <div class="row">
-    <div class="col-1 col-md-1 d-md-flex justify-content-center text-white menu-item vh-100">
-      <header class="text-center bg-color vw-100 p-2 " id="title__logo">
-        <img alt="Logo OneGed" src="./assets/img/log-OneGed.svg">
-      </header>
-      <aside class="d-none d-md-block sidebar text-center bg-color ">
+    <header class="text-center bg-color vw-100 p-2" id="title__logo">
+      <img alt="Logo OneGed" src="./assets/img/log-OneGed.svg">
+    </header>
+    <div class="col-1 col-md-1 justify-content-center text-white menu-item p-0 vh-100">
+      <aside class="d-none d-md-block sidebar text-center bg-color h-100">
         <div id="menu__lateral-logo"></div>
         <hr>
         <nav class="mt-3 menu__itens margin__sidebar" id="menu__lateral-nav"></nav>
@@ -33,14 +33,15 @@
       </aside>
     </div>
 
-    <main class="col-11  col-md-11 container__main p-0">
+    <main class="col-11 col-md-11 container__main p-0">
       <div id="view" class="content text-black"></div>
     </main>
   </div>
 
 
-  <div class="position-relative">
-    <div class=" d-flex justify-content-around p-2 fixed-bottom mb-5 bg-color" id="menu__footer"></div>
+  <div class="position-relative custom__menu-footer">
+    <div class=" d-flex d-md-none d-lg-none justify-content-around p-2 fixed-bottom mb-5 bg-color" id="menu__footer">
+    </div>
     <footer class="d-flex justify-content-between p-3 fixed-bottom fixed-bottom bg-color" id="footer">
     </footer>
   </div>

@@ -11,10 +11,12 @@
 }
 
 .container__main {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.8),
-            rgba(255, 255, 255, 0.8)),
+    background-image: linear-gradient(
+            rgba(255, 255, 255, 0.8),
+            rgba(255, 255, 255, 0.8)
+        ),
         url("../img/log-OneGed.svg");
-    background-size: 30%;
+    background-size: 40%;
     background-position: center;
     background-repeat: no-repeat;
 
@@ -24,14 +26,27 @@
 .content {
     /* Centraliza o conteúdo na página */
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
 
     /* Estilize seu conteúdo como desejar */
 }
+@media screen and (max-width: 375px) {
+    .content {
+        top: 50%;
+        left: 44%;
+        height: 100vh;
+    }
+    .custom__form {
+        width: 20em;
+    }
+    .custom__menu-footer {
+        margin-top: 3em;
+    }
+}
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
     #menu__lateral {
         display: flex !important;
         text-align: center;
@@ -76,11 +91,35 @@
         display: none;
     }
 
-    .custom__input{
+    .custom__input {
         width: 25em;
     }
 
-    .custom__input-senha{
+    .custom__input-senha {
         width: 12em;
+    }
+}
+@media screen and (max-width: 667px) {
+    .content {
+        top: 70%;
+        left: 46%;
+    }
+    .custom__form {
+        width: 25em;
+    }
+    .custom__menu-footer {
+        margin-top: 20em;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .content {
+        top: 42%;
+        left: 44%;
+    }
+    .margin__itens {
+        margin-top: 5em;
+    }
+    .custom__form {
+        width: 20em;
     }
 }
