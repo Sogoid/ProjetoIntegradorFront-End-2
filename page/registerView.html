@@ -1,5 +1,10 @@
 <form id="frmCadastro" class="mt-5 custom__form">
     <div class="form-floating mb-3 custom__input">
+        <input class="form-control rounded-pill shadow border-black" id="inputUserGitHub" name=""
+            placeholder="Usuário GitHub*" type="text">
+        <label for="inputUserGitHub">Usuário GitHub*</label>
+    </div>
+    <div class="form-floating mb-3 custom__input">
         <input class="form-control rounded-pill shadow border-black" id="inputRegisterCPF" name="" placeholder="CPF"
             type="text" required>
         <label for="inputRegisterCPF">CPF</label>
@@ -10,19 +15,19 @@
         <label for="inputRegisterDataNasc">Data de nascimento</label>
     </div>
     <div class="form-floating mb-3 custom__input">
-        <input class="form-control rounded-pill shadow border-black" id="inputRegisterName" name=""
+        <input class="form-control rounded-pill shadow border-black" id="inputRegisterUserLogin" name=""
             placeholder="Nome Completo" type="text" required>
-        <label for="inputRegisterName">Nome Completo</label>
+        <label for="inputRegisterUserLogin">Nome Completo</label>
+    </div>
+    <div class="form-floating mb-3 custom__input">
+        <input class="form-control rounded-pill shadow border-black" id="inputRegisterEmailLogin" name=""
+            placeholder="E-mail válido" type="email" required>
+        <label for="inputRegisterEmailLogin">E-email válido</label>
     </div>
     <div class="form-floating mb-3 custom__input">
         <input class="form-control rounded-pill shadow border-black" id="inputRegisterEnd" name=""
-            placeholder="E-mail válido" type="email" required>
-        <label for="inputRegisterEnd">E-email válido</label>
-    </div>
-    <div class="form-floating mb-3 custom__input">
-        <input class="form-control rounded-pill shadow border-black" id="inputRegisterEmail" name=""
             placeholder="Endereço" type="text" required>
-        <label for="inputRegisterEmail">Endereço</label>
+        <label for="inputRegisterEnd">Endereço</label>
     </div>
     <section class="d-flex gap-2">
         <div class="form-floating mb-3">
@@ -37,8 +42,8 @@
         </div>
     </section>
     <div class="d-flex gap-3">
-        <button type="submit" class="w-50 btn btn-lg btn-dark rounded-pill mb-3 shadow"
-            onclick="validaCampos()">Salvar</button>
-        <button type="reset" class="w-50 btn btn-lg btn-danger rounded-pill mb-3 shadow">Cancelar</button>
+        <button type="submit" id="btnSalvar" class="w-50 btn btn-lg btn-dark rounded-pill mb-3 shadow">Salvar</button>
+        <button type="reset" id="btn-clean"
+            class="w-50 btn btn-lg btn-danger rounded-pill mb-3 shadow">Cancelar</button>
     </div>
 </form>
