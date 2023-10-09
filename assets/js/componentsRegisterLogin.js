@@ -4,6 +4,7 @@ $("#frmCadastroLogin").on("submit", function (event) {
 
 
     // Cadastro simplificado no Login
+    let inputUserGitHub = $("#inputUserGitHub").val();
     let inputRegisterUserLogin = $("#inputRegisterUserLogin").val();
     let inputRegisterEmailLogin = $("#inputRegisterEmailLogin").val();
     let inputRegisterPasswordLogin = $("#inputRegisterPasswordLogin").val();
@@ -11,6 +12,7 @@ $("#frmCadastroLogin").on("submit", function (event) {
     let registerAcceptTermLogin = $("#registerAcceptTermLogin").val();
 
     let register = {
+        apelido: inputUserGitHub,
         name: inputRegisterUserLogin,
         email: inputRegisterEmailLogin,
         password: inputRegisterPasswordLogin,
@@ -18,6 +20,7 @@ $("#frmCadastroLogin").on("submit", function (event) {
         acceptTerm: registerAcceptTermLogin,
     }
 
+    // Função para validar campos
     // if (!validaCampos(register)) return;
 
     if (localStorage.getItem('register') === null ||
@@ -33,6 +36,12 @@ $("#frmCadastroLogin").on("submit", function (event) {
     console.log(dados);
 });
 
+// Função para limpar o localStorage do navegador.
+// $("#btn-clean").one("click", () => {
+//     localStorage.clear();
+// })
+
+// Continuação da Função para validar campos
 // function validaCampos(register) {
 //     for (let key in register) {
 //         let value = register[key];

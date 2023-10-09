@@ -10,6 +10,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <link href="../assets/css/styleLogin.css" rel="stylesheet">
     <link href="../assets/public/log-OneGed.ico" rel="shortcut icon" type="image/x-icon">
+    <script src="../assets/js/componentLogin.js" defer></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
 </head>
 
 <body>
@@ -18,7 +20,7 @@
             <div class="row align-items-center bg-body-secondary rounded-4 p-1 p-md-2">
                 <section class="col-md-6">
                     <div class="text-center">
-                        <img alt="Logo" class="rounded mx-auto d-block mb-2 img__logo"
+                        <img id="perfil" alt="Logo" class="rounded mx-auto d-block mb-2 img__logo"
                             src="../assets/img/log-OneGed.svg">
                         <hr class="border-bottom border-dark w-100">
                         <p class="fs-4 ">Seu sistema para gerenciar arquivos.</p>
@@ -28,11 +30,11 @@
                     <div class="text-center p-4 p-md-5 border rounded-4 bg-primary">
                         <img src="../assets/img/fotoperfil.jpeg" alt="" width="150" height="150"
                             class="rounded-circle my-3">
-                        <form>
+                        <form id="formLogin">
                             <div class="form-floating mb-3">
-                                <input class="form-control rounded-pill shadow" id="inputUsuario" name=""
+                                <input class="form-control rounded-pill shadow" id="inputUser" name=""
                                     placeholder="Usuário" type="email">
-                                <label for="inputUsuario">Usuário</label>
+                                <label for="inputUser">Usuário</label>
                             </div>
                             <div class="form-floating mb-3">
                                 <input class="form-control rounded-pill shadow" id="inputPassword" name=""
@@ -47,7 +49,8 @@
                             <p><a class="text-decoration-none text-dark" href="../page/esqueceuSenha.html">Esqueceu a
                                     senha!</a></p>
                         </div>
-                        <button type="submit" class="w-100 btn btn-lg btn-dark rounded-pill mb-4 shadow">Entrar</button>
+                        <button id="btn-login" type="submit"
+                            class="w-100 btn btn-lg btn-dark rounded-pill mb-4 shadow">Entrar</button>
                         <hr class="border-bottom border-dark w-100">
                         <ul class="d-flex justify-content-evenly mb-0">
                             <li class="list-unstyled">Não tem Conta!</li>
