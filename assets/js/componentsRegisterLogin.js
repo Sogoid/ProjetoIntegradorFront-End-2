@@ -58,9 +58,9 @@ $("#btnSalvar").on("click", function (event) {
 
 
 // Função para limpar o localStorage do navegador.
-// $("#btn-clean").one("click", () => {
-//     localStorage.clear();
-// })
+$("#btn-clean").one("click", () => {
+    localStorage.clear();
+})
 
 // Continuação da Função para validar campos
 // function validaCampos(register) {
