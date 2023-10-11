@@ -1,26 +1,14 @@
 // Carrega o componente referente ao menu no rodapé para dispositivos moveis.
-$("#menu__footer").load("./assets/components/asideFooterComp.html");
+$("#menu__footer").load("../assets/components/asideFooterComp.html");
 
 // Carrega o componente referente ao rodapé
-$("#footer").load("./assets/components/footerComp.html");
+$("#footer").load("../assets/components/footerComp.html");
 
 // Carrega o componente referente a logo.
-$("#menu__lateral-logo").load("./assets/components/aisdeCompLogo.html");
+$("#menu__lateral-logo").load("../assets/components/asideCompLogo.html");
 
 // Carrega o componente referente ao menu.
-$("#menu__lateral-nav").load("./assets/components/asideComp.html");
+$("#menu__lateral-nav").load("../assets/components/asideComp.html");
 
 // Carrega o componente referente ao menu DropDown.
-$("#menu__lateral-dropdown").load("./assets/components/asideCompDropdwon.html");
-
-
-// Função para finalizar a sessão
-$('a.dropdown-item').on('click', function () {
-    localStorage.removeItem('userLogged');
-    localStorage.clear();
-});
-
-
-
-
-
+$("#menu__lateral-dropdown").load("../assets/components/asideCompDropdwon.html");

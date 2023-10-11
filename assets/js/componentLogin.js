@@ -11,7 +11,7 @@ $("#btn-login").on("click", function (event) {
         if ((object.email === inputUser || object.apelido === inputUser) && object.password === inputPassword) {
             // Define 'userLogged' como verdadeiro no localStorage
             localStorage.setItem('userLogged', true);
-            window.location.href = "../../index.html"
+            window.location.href = "../page/indexView.html"
             existe = true;
         }
     });

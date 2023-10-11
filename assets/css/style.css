@@ -24,3 +24,18 @@ html {
     flex-direction: column;
     justify-content: center;
 }
+.em-desenvolvimento {
+    position: fixed;
+    top: 8.5em;
+    right: -2em;
+    width: 15em;
+    padding: 10px;
+    background-color: #00d6a0;
+    color: white;
+    text-align: center;
+    z-index: 1000;
+    transform: rotate(45deg);
+    transform-origin: top right;
+    text-transform: uppercase;
+    font-size: 1em;
+}

@@ -1,13 +1,13 @@
 $(function () {
   let routes = {
-    "": function () {
-      // Não carrega nada para a rota da home
+    "home": function () {
+      window.location.href = "/page/indexView.html";
     },
     "register": function () {
-      $("#view").load("page/registerView.html");
+      $("#view").load("../page/registerView.html");
     },
     "listUser": function () {
-      $("#view").load("page/listUser.html");
+      $("#view").load("../page/listUser.html");
     },
   };
 
@@ -38,7 +38,7 @@ $(function () {
   // Para todas as outras páginas, verifique se o usuário está logado
   if (!localStorage.getItem('userLogged')) {
     // Se não estiver logado, redirecione para a página de login
-    window.location.href = 'page/login.html';
+    window.location.href = '../../index.html';
   }
 });
 
