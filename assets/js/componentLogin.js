@@ -21,8 +21,22 @@ $("#btn-login").on("click", function (event) {
 
 });
 
-// Função para finalizar a sessão
-$('a.dropdown-item').on('click', function () {
-    localStorage.removeItem('userLogged');
-    localStorage.clear();
+$(function () {
+    const getGitUser = localStorage.getItem("register");
+    if (getGitUser) {
+        let dados = JSON.parse(getGitUser);
+        let username = dados?.register?.apelido;
+        if (username) {
+            let img = $('#perfil');
+            let defaultImg = 'https://github.com/' + username + '.png';
+
+            img[0].onerror = function () {
+                $(this).attr('src', defaultImg);
+            };
+        } else {
+            console.error('Nenhum item "register" encontrado no localStorage');
+        }
+    }
 });
+
+

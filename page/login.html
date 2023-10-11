@@ -14,55 +14,53 @@
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
 </head>
 
-<body>
+<body class="custom-body">
     <main class="container">
-        <div class="center-block">
-            <div class="row align-items-center bg-body-secondary rounded-4 p-1 p-md-2">
-                <section class="col-md-6">
-                    <div class="text-center">
-                        <img id="perfil" alt="Logo" class="rounded mx-auto d-block mb-2 img__logo"
-                            src="../assets/img/log-OneGed.svg">
-                        <hr class="border-bottom border-dark w-100">
-                        <p class="fs-4 ">Seu sistema para gerenciar arquivos.</p>
-                    </div>
-                </section>
-                <section class="col-md-6 mx-auto col-lg-5">
-                    <div class="text-center p-4 p-md-5 border rounded-4 bg-primary">
-                        <img src="../assets/img/fotoperfil.jpeg" alt="" width="150" height="150"
-                            class="rounded-circle my-3">
-                        <form id="formLogin">
-                            <div class="form-floating mb-3">
-                                <input class="form-control rounded-pill shadow" id="inputUser" name=""
-                                    placeholder="Usuário" type="email">
-                                <label for="inputUser">Usuário</label>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <input class="form-control rounded-pill shadow" id="inputPassword" name=""
-                                    placeholder="Senha" type="password">
-                                <label for="inputPassword">Senha</label>
-                            </div>
-                        </form>
-                        <div class="d-flex justify-content-between checkbox mb-3">
-                            <label for="">
-                                <input id="" name="" type="checkbox" value="Lembrar-me">Lembrar-me
-                            </label>
-                            <p><a class="text-decoration-none text-dark" href="../page/esqueceuSenha.html">Esqueceu a
-                                    senha!</a></p>
+        <div class="row align-items-center bg-body-tertiary rounded-4 p-1 p-lg-5">
+            <section class="col-md-6">
+                <div class="text-center">
+                    <img id="perfil" alt="Logo" class="rounded mx-auto d-block mb-2 img__logo"
+                        src="../assets/img/log-OneGed.svg">
+                    <hr class="border-bottom border-dark w-100">
+                    <p class="fs-4 ">Seu sistema para gerenciar arquivos.</p>
+                </div>
+            </section>
+            <section class="col-md-6 mx-auto col-lg-5">
+                <div class="text-center p-4 p-md-5 border rounded-4 bg-primary">
+                    <img src="../assets/img/fotoperfil.jpeg" alt="" width="150" height="150"
+                        class="rounded-circle my-3">
+                    <form id="formLogin">
+                        <div class="form-floating mb-3">
+                            <input class="form-control rounded-pill shadow" id="inputUser" name="" placeholder="Usuário"
+                                type="email">
+                            <label for="inputUser">Usuário</label>
                         </div>
-                        <button id="btn-login" type="submit"
-                            class="w-100 btn btn-lg btn-dark rounded-pill mb-4 shadow">Entrar</button>
-                        <hr class="border-bottom border-dark w-100">
-                        <ul class="d-flex justify-content-evenly mb-0">
-                            <li class="list-unstyled">Não tem Conta!</li>
-                            <li class="list-unstyled"><a class="text-decoration-none text-dark"
-                                    href="../page/cadastroLogin.html" title="Cadastrar-se"><i
-                                        class="bi bi-person-plus-fill"></i>
-                                    <span>Cadastrar-se</span></a>
-                            </li>
-                        </ul>
+                        <div class="form-floating mb-3">
+                            <input class="form-control rounded-pill shadow" id="inputPassword" name=""
+                                placeholder="Senha" type="password">
+                            <label for="inputPassword">Senha</label>
+                        </div>
+                    </form>
+                    <div class="d-flex justify-content-between checkbox mb-3">
+                        <label for="">
+                            <input id="" name="" type="checkbox" value="Lembrar-me">Lembrar-me
+                        </label>
+                        <p><a class="text-decoration-none text-dark" href="../page/esqueceuSenha.html">Esqueceu a
+                                senha!</a></p>
                     </div>
-                </section>
-            </div>
+                    <button id="btn-login" type="submit"
+                        class="w-100 btn btn-lg btn-dark rounded-pill mb-4 shadow">Entrar</button>
+                    <hr class="border-bottom border-dark w-100">
+                    <ul class="d-flex justify-content-evenly mb-0">
+                        <li class="list-unstyled">Não tem Conta!</li>
+                        <li class="list-unstyled"><a class="text-decoration-none text-dark"
+                                href="../page/cadastroLogin.html" title="Cadastrar-se"><i
+                                    class="bi bi-person-plus-fill"></i>
+                                <span>Cadastrar-se</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
         </div>
     </main>
     <script crossorigin="anonymous" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"

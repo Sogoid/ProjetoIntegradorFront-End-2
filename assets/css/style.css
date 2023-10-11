@@ -1,12 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
-* {
-    box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
 :root {
     /* Palheta de cores*/
     --primaria-color: white;
@@ -21,4 +14,13 @@
 
     /* Backgrounds*/
     --background-primario: url("../img/bg.jpg");
+}
+html {
+    height: 100%;
+}
+.custom-body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }

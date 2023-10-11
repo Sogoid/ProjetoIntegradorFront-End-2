@@ -13,21 +13,14 @@ $("#menu__lateral-nav").load("./assets/components/asideComp.html");
 // Carrega o componente referente ao menu DropDown.
 $("#menu__lateral-dropdown").load("./assets/components/asideCompDropdwon.html");
 
-$(function () {
-    const getGitUser = localStorage.getItem("register");
-    if (getGitUser) {
-        let dados = JSON.parse(getGitUser);
-        let username = dados.register.apelido;
-        let img = $('#perfil');
-        let defaultImg = 'https://github.com/' + username + '.png';
 
-        img[0].onerror = function () {
-            $(this).attr('src', defaultImg);
-        };
-    } else {
-        console.error('Nenhum item "register" encontrado no localStorage');
-    }
+// Função para finalizar a sessão
+$('a.dropdown-item').on('click', function () {
+    localStorage.removeItem('userLogged');
+    localStorage.clear();
 });
+
+
 
 
 
