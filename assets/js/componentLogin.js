@@ -1,42 +1,66 @@
-$("#btn-login").on("click", function (event) {
-    // Para evitar o envio do formulário utilizaremos a seguinte instrução:
+// Recupera os dados do localStorage
+let dados = JSON.parse(localStorage.getItem("register"));
+
+// Função para lidar com o evento de clique no botão de login
+function handleLoginClick(event) {
     event.preventDefault();
 
     let inputUser = $("#inputUser").val();
     let inputPassword = $("#inputPassword").val();
-    let dados = JSON.parse(localStorage.getItem("register"));
-    let existe = false;
+    let userExists = false;
 
-    dados.forEach((object) => {
-        if ((object.email === inputUser || object.apelido === inputUser) && object.password === inputPassword) {
-            // Define 'userLogged' como verdadeiro no localStorage
+    dados.forEach((user) => {
+        if ((user.email === inputUser || user.apelido === inputUser) && user.password === inputPassword) {
             localStorage.setItem('userLogged', true);
-            window.location.href = "../page/indexView.html"
-            existe = true;
+            window.location.href = "../page/indexView.html";
+            userExists = true;
         }
     });
-    if (!existe) {
-        console.log("Dados incorreto insira os dados novamente");
+
+    if (!userExists) {
+        console.log("Dados incorretos. Insira os dados novamente.");
+    }
+}
+
+// Função para lidar com o evento de entrada do campo de usuário
+function handleUserInput() {
+    let inputGitUser = $(this).val();
+
+    if (!inputGitUser) {
+        console.error('O campo de entrada está vazio ou nulo');
+        return;
     }
 
-});
-
-$(function () {
-    const getGitUser = localStorage.getItem("register");
-    if (getGitUser) {
-        let dados = JSON.parse(getGitUser);
-        let username = dados?.register?.apelido;
-        if (username) {
-            let img = $('#perfil');
-            let defaultImg = 'https://github.com/' + username + '.png';
-
-            img[0].onerror = function () {
-                $(this).attr('src', defaultImg);
-            };
+    $.each(dados, function (i, user) {
+        let apelido = user.apelido;
+        console.log(apelido);
+        if (inputGitUser === apelido) {
+            updateProfileImage(apelido);
         } else {
             console.error('Nenhum item "register" encontrado no localStorage');
         }
-    }
+    });
+}
+
+// Função para atualizar a imagem de perfil
+function updateProfileImage(username) {
+    let img = $('#perfil');
+    let defaultImg = "/assets/img/fotoUser.png";
+    let gitHubImg = 'https://github.com/' + username + '.png';
+
+    img.attr('src', gitHubImg);
+
+    img[0].onerror = function () {
+        $(this).attr('src', defaultImg);
+    };
+}
+
+// Adiciona os manipuladores de eventos
+$("#btn-login").on("click", handleLoginClick);
+$('#inputUser').on("input", handleUserInput);
+
+
+$(document).on("pageshow", function () {
+    $('#inputUser').val('');
+    $('#inputPassword').val('');
 });
-
-

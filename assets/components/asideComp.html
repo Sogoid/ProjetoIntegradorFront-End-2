@@ -1,36 +1,32 @@
 <nav>
-    <ul class="nav nav-pills">
-        <li class="nav-item p-0 g-md-2">
-            <a href="#home" class="nav-link text-black d-flex justify-content-center align-items-center p-0 fw-bold"
-                aria-current="page">
+    <ul class="nav">
+        <li class="nav-item item__menu">
+            <a href="#home" class="nav-link text-black fw-bold" aria-current="page">
                 <i class="bi bi-house-check-fill fs-2 me-2"></i>
-                <span class="menu-text">Home</span>
+                <span class="">Home</span>
             </a>
         </li>
-        <li class="nav-item p-0 g-md-2 ">
-            <a href="#register"
-                class="nav-link text-black d-flex justify-content-center align-items-center p-0 fw-bold">
+        <li class="nav-item item__menu">
+            <a href="#register" class="nav-link text-black fw-bold">
                 <i class="bi bi-plus-circle-fill fs-2 me-2"></i>
-                <span class="menu-text">Cadastro</span>
+                <span class="">Cadastro</span>
+            </a>
+        </li>
+        <li class="nav-item item__menu">
+            <a href="#" class="nav-link text-black fw-bold">
+                <i class="bi bi-cloud-plus-fill fs-2 me-2"></i>
+                <span class="">Upload Documento</span>
             </a>
         </li>
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle d-flex justify-content-center align-items-center p-0 text-black fw-bold"
-                href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link text-black fw-bold" href="#">
                 <i class="bi bi-list-stars fs-2 me-2"></i>
-                <span class="menu-text">Listagem</span>
+                <span class="">Listagem</span>
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#listUser">Lista de Usuário</a></li>
-                <li><a class="dropdown-item" href="#">Lista de Documento</a></li>
+            <ul class="dropdown-content-menu">
+                <li><a href="#listUser">Lista de Usuário</a></li>
+                <li><a href="#">Lista de Documento</a></li>
             </ul>
-        </li>
-        <li class="nav-item">
-            <a href="#" class="nav-link text-black d-flex justify-content-center align-items-center p-0 fw-bold">
-                <i class="bi bi-bug-fill fs-2 me-2"></i>
-                <use xlink:href="#people-circle"></use>
-                <span class="menu-text">Customers</span>
-            </a>
         </li>
     </ul>
 </nav>

@@ -24,11 +24,58 @@
 .content {
     /* Centraliza o conteúdo na página */
     position: absolute;
-    top: 35%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
 
-    /* Estilize seu conteúdo como desejar */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown:hover,
+.item__menu:hover {
+    border: 0.1em solid var(--quarta-color);
+    background-color: white;
+}
+
+.dropdown-content-menu,
+.dropdown-content-user {
+    background-color: var(--backgroud-color);
+    display: none;
+    position: absolute;
+    min-width: 180px;
+    z-index: 1;
+    list-style: none;
+    font-weight: 600;
+    text-align: start;
+}
+
+.dropdown-content-menu {
+    top: 0;
+    left: 100%;
+}
+
+.dropdown-content-user {
+    bottom: 60%;
+}
+
+.dropdown-content-menu a,
+.dropdown-content-user a {
+    color: var(--quarta-color);
+    text-decoration: none;
+}
+
+.dropdown-content-menu a:hover,
+.dropdown-content-user a:hover {
+    color: var(--primaria-color);
+}
+
+.dropdown:hover .dropdown-content-menu,
+.dropdown:hover .dropdown-content-user {
+    border: 0.1em solid var(--quarta-color);
+    display: block;
 }
 
 @media screen and (max-width: 375px) {
@@ -48,24 +95,25 @@
 }
 
 @media screen and (min-width: 768px) {
-    #menu__lateral {
+    /* #menu__lateral {
         display: flex !important;
+        flex-direction: column;
         text-align: center;
-    }
+    } */
 
     #menu__footer,
     #title__logo {
         display: none !important;
     }
 
-    .sidebar {
+    /* .sidebar {
         width: 8em;
         transition: width 0.5s;
         position: absolute;
         z-index: 1;
-    }
+    } */
 
-    .menu__itens {
+    /* .menu__itens {
         width: 50px !important;
         padding: 1.9em;
     }
@@ -80,17 +128,17 @@
         .menu-text {
             display: inline;
         }
-    }
+    } */
 
-    .menu-item {
+    /* .menu-item {
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
-    }
+    } */
 
-    .menu-text {
+    /* .menu-text {
         display: none;
-    }
+    } */
 
     .custom__input {
         width: 25em;
@@ -122,11 +170,15 @@
         left: 44%;
     }
 
+
     .margin__itens {
-        margin-top: 5em;
+        margin-top: 3em;
+        margin-bottom: 3em;
     }
 
     .custom__form {
         width: 20em;
     }
+
+
 }

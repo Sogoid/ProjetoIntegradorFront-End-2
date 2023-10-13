@@ -55,9 +55,6 @@ $("#btnSalvar").on("click", function (event) {
     salvarDados();
 });
 
-export { register };
-
-
 // Função para limpar o localStorage do navegador.
 $("#btn-clean").one("click", () => {
     localStorage.clear();
