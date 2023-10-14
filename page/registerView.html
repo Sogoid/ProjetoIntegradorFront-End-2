@@ -29,7 +29,7 @@
             placeholder="Endereço" type="text" required>
         <label for="inputRegisterEnd">Endereço</label>
     </div>
-    <section class="d-flex gap-2">
+    <section class="d-flex gap-2 flex-column flex-md-row">
         <div class="form-floating mb-3">
             <input class="form-control rounded-pill shadow border-black custom__input-senha"
                 id="inputRegisterPasswordLogin" name="" placeholder="Senha" type="password" required>
@@ -41,9 +41,9 @@
             <label for="inputRegisterRepeatPasswordLogin">Repita a Senha</label>
         </div>
     </section>
-    <div class="d-flex gap-3">
-        <button type="submit" id="btnSalvar" class="w-50 btn btn-lg btn-dark rounded-pill mb-3 shadow">Salvar</button>
-        <button type="reset" id="btn-clean"
-            class="w-50 btn btn-lg btn-danger rounded-pill mb-3 shadow">Cancelar</button>
-    </div>
 </form>
+    <div class="d-flex d-md-flex justify-content-md-end align-self-md-end gap-3">
+        <button type="submit" id="btnSalvar" class="w-100 btn btn-lg btn-dark rounded-pill mb-3 shadow">Salvar</button>
+        <button type="reset" id="btn-clean"
+            class="w-100 btn btn-lg btn-danger rounded-pill mb-3 shadow">Cancelar</button>
+    </div>
